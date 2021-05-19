@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+    <script src='js/jquery-3.6.0.js'></script>
+</head>
+
+<body>
+    <div id="menu_top">
+        <ul>
+            <li><a href="index.html" title="Trang chủ" class="active">Trang chủ</a> </li>
+            <li><a href="let-var.html" title="Let và Var">Let và Var</a></li>
+            <li><a href="s-s-s.html" title="Slice - Substr - Substring">Slice - Substr - Substring</a></li>
+            <li><a href="moment.html" title="Moment JS">Moment JS</a></li>
+        </ul>
+    </div>
+    <div id="banner">
+        <img src="images/banner2.jpg">
+    </div>
+    <div id="main">
+        <div id="left">
+            <ul>
+                <li>
+                    <a href="let-var.html"><img src="images/let&var.jpg"></a>
+                    <h2><a href="let-var.html">So sánh sự khác nhau giữa Let và Var</a></h2>
+                    Tại sao lại cần tới let và const dù trước đó đã có var để khai báo biến, thì ở bài viết này là lý do
+                    của từng kiểu khai báo biến.
+                </li>
+                <li>
+                    <a href="s-s-s.html"><img src="images/sss.jpg"></a>
+                    <h2><a href="s-s-s.html">So sánh sự khác nhau giữa slice - substring - substr</a></h2>
+                    Hàm substr() và substring(), slice() đều là hàm cắt chuỗi trong Javascript. Nhưng mỗi hàm lại có
+                    công dụng và hành vi riêng của nó.
+                </li>
+                <li>
+                    <a href="moment.html"><img src="images/moment.jpg"></a>
+                    <h2><a href="moment.html">Tìm hiểu về Moment JS</a></h2>
+                    Moment.js là một thư viện mạnh dùng để thao tác xử lý datetime trong javascript.
+                    Moment.js được thiết kế hoạt động trong cả browser và Node.js
+                </li>
+            </ul>
+            <div>
+                <form name="formCmt" action="" method="POST" style="width:400px; margin:auto" onsubmit="return validateFormComment()">
+                    <h1>Bình luận</h1>
+                    <div class="label_setup">
+                        <div class="label_">
+                            <label class="required">Email</label>
+                        </div>
+                        <div class="input_">
+                            <input type="email" name="email" id="email" />
+                        </div>
+                    </div>
+                    <div class="label_setup">
+                        <div class="label_">
+                            <label class="required">Tiêu đề</label>
+                        </div>
+                        <div class="input_">
+                            <input type="text" name="title" id="title" />
+                        </div>
+                    </div>
+                    <div class="label_setup">
+                        <div class="label_">
+                            <label class="required">Nội dung</label>
+                        </div>
+                        <div class="input_">
+                            <input   type="text" name="content" id="content" />
+                        </div>
+                    </div>
+                    <p id="form-error"></p>
+                    <input style="margin-left: 0px; margin-top: 10px;" type="reset" value="Xóa nội dung">
+                    <input type="submit" value="Bình luận">
+
+                </form>
+            </div>
+            <div id="comment" class="comment-black">
+                <div>
+                    <h3>Bai viet rat hay</h3><span>hocsinhtapcode@gmail.com.vn</span>
+                    <div>Bai viet rat hay</div>
+
+                </div>
+                <div>
+                    <h3>Bai viet rat hay</h3><span>hocsinhtapcode@gmail.com.vn</span>
+                    <div>Bai viet rat hay</div>
+
+                </div>
+                <div>
+                    <h3>Bai viet rat hay</h3><span>hocsinhtapcode@gmail.com.vn</span>
+                    <div>Bai viet rat hay</div>
+
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div class="menu_right">
+                <h3>Danh mục</h3>
+                <ul>
+                    <li><a href="let-var.html">So sánh sự khác nhau giữa Let và Var</a></li>
+                    <li><a href="s-s-s.html">So sánh sự khác nhau giữa slice - substring - substr</a></li>
+                    <li><a href="moment.html">Tìm hiểu về Moment JS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">Copyright © 2021 All Rights Reserved. Phát biển bởi Vũ Trung Kiên</div>
+
+</body>
+
+</html>
